@@ -1,0 +1,93 @@
+@(message: String, style: String = "scala")(implicit assetsFinder: AssetsFinder)
+@main("test"){
+  <link rel="stylesheet" media="screen" href="@assetsFinder.path("stylesheets/main.css")">
+  <link rel="shortcut icon" type="image/png" href="@assetsFinder.path("images/favicon.png")">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+}
+@defining(play.core.PlayVersion.current) { version =>
+  <div class="container">
+    <div id="content" class="navbar">
+      <div class="logo">
+        <img src="@routes.Assets.versioned("images/logo.png")" width="125px" alt="">
+      </div>
+      <nav class="navBar">
+        <ul id = "MenuItems">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <img src="@routes.Assets.versioned("images/cart.png")" width = 30px height = 30px" alt="" >
+      <img src="@routes.Assets.versioned("images/menu.png")" class="menu-icon"
+      onclick= "menutoggle()">
+
+    </div>
+  </div>
+
+        <div class="small-container cart-page">
+          <table>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+            </tr>
+            <tr>
+              <td>
+                <div class="cart-info">
+                  <img src="@routes.Assets.versioned("images/buy-1.jpg")">
+                    <div>
+                      <p>Red Printed T-shirt</p>
+                      <small>Price: $50.00</small>
+                      <br>
+                      <a href="">Remove</a>
+                    </div>
+                </div>
+              </td>
+              <td><Input type = "number" value="1"> </td>
+              <td>$50.00</td>
+            </tr>
+          </table>
+        </div>
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download our App</h3>
+          <p>Download from Andriod/ ios</p>
+          <div class="app-logo">
+            <img src="@routes.Assets.versioned("images/play-store.png")">
+            <img src="@routes.Assets.versioned("images/app-store.png")">
+          </div>
+
+        </div>
+        <div class="footer-col-2">
+          <img src="@routes.Assets.versioned("images/logo-white.png")">
+          <p>Our purpose is to do abc</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful links</h3>
+          <ul>
+            <li>Blog Post </li>
+            <li> Returns policy></li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook </li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+            <li>YouTube</li>
+
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <p class="copyright">Copyright 2022 - Alsahid</p>
+    </div>
+  </div>
+
+}
+

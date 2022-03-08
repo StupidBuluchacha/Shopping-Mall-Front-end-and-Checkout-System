@@ -1,0 +1,3 @@
+[0m[[0m[31merror[0m] [0m[0m[Error] C:\Users\simmsA\Desktop\rep\scala\play-samples\play-scala-starter-example\app\views\product-details.scala.html:1[0m
+[0m[[0m[31merror[0m] [0m[0m@(message: String, style: String = "scala")(implicit assetsFinder: AssetsFinder): Invalid template name [product-details.scala.html], filenames must only consist of alphanumeric characters and underscores or periods.[0m
+[0m[[0m[31merror[0m] [0m[0m(Compile / [31mtwirlCompileTemplates[0m) Twirl compilation failed[0m

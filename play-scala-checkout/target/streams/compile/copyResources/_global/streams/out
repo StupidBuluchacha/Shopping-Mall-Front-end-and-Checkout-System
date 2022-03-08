@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\CS\Sem2\IT 5001A\Lab Assignments\Assign3\IT5100 Shopping Cart\play-scala-checkout\conf\application.conf,D:\CS\Sem2\IT 5001A\Lab Assignments\Assign3\IT5100 Shopping Cart\play-scala-checkout\target\scala-2.13\classes\application.conf)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\CS\Sem2\IT 5001A\Lab Assignments\Assign3\IT5100 Shopping Cart\play-scala-checkout\conf\logback.xml,D:\CS\Sem2\IT 5001A\Lab Assignments\Assign3\IT5100 Shopping Cart\play-scala-checkout\target\scala-2.13\classes\logback.xml)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(D:\CS\Sem2\IT 5001A\Lab Assignments\Assign3\IT5100 Shopping Cart\play-scala-checkout\conf\routes,D:\CS\Sem2\IT 5001A\Lab Assignments\Assign3\IT5100 Shopping Cart\play-scala-checkout\target\scala-2.13\classes\routes)[0m

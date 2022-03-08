@@ -1,0 +1,4 @@
+[warn] scala-library-2.13.6-sources.jar no longer exists at C:\Users\simmsA\Desktop\rep\scala\CheckoutSystem\null\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.6\scala-library-2.13.6-sources.jar
+[debug] not up to date. inChanged = false, force = false
+[debug] Updating ProjectRef(uri("file:/D:/NUS课程/IT5100A%20Typed%20Functional%20Programming%20in%20Practice/Group%20Project/Stage3%20Implementation/code/CheckoutSystem/"), "checkoutsystem")...
+[debug] Done updating ProjectRef(uri("file:/D:/NUS课程/IT5100A%20Typed%20Functional%20Programming%20in%20Practice/Group%20Project/Stage3%20Implementation/code/CheckoutSystem/"), "checkoutsystem")

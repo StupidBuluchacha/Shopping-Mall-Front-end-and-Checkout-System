@@ -1,0 +1,171 @@
+@(message: String, style: String = "scala")(implicit assetsFinder: AssetsFinder) @main("Products"){ <link rel="stylesheet" media="screen" href="@assetsFinder.path("stylesheets/main.css")"> <link rel="shortcut icon" type="image/png" href="@assetsFinder.path("images/favicon.png")">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+
+} @defining(play.core.PlayVersion.current) { version =>
+<div class="container">
+  <div id="content" class="navbar">
+    <div class="logo"><img src="@routes.Assets.versioned("images/logo.png")" width="125px" alt=""></div>
+    <nav class="navBar">
+      <ul id="MenuItems">
+        <li><a href="javascript:void(0);" id="toHome">Home</a></li>
+        <li><a href="javascript:void(0);" id="toProducts">Products</a></li>
+        <li><a href="javascript:void(0);">About</a></li>
+        <li><a href="javascript:void(0);">Contact</a></li>
+        <li><a href="javascript:void(0);" id="toCart">MyCart</a></li>
+      </ul>
+    </nav>
+    <img src="@routes.Assets.versioned("images/cart.png")" width = 30px height = 30px" alt="" > <img src="@routes.Assets.versioned("images/menu.png")" class="menu-icon" onclick= "menutoggle()">
+  </div>
+</div>
+
+<div class="small-container">
+  <h2 class="title">All Products</h2>
+  <!--comment out -->
+  <div class="row row-2">
+    <h2>All Products</h2>
+    <select>
+      <option>Default Sorting</option>
+      <option>Sort by price</option>
+      <option>Sort by popularity</option>
+      <option>Sort by rating</option>
+    </select>
+  </div>
+  <div class="row">
+    <div class="col-4" id="product1">
+      <img src="@routes.Assets.versioned("images/product-1.jpg")" >
+      <h4>Red Printed T-shirt</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>$50.00</p>
+    </div>
+    <div class="col-4">
+      <img src="@routes.Assets.versioned("images/product-2.jpg")" alt="">
+      <h4>HRX 4000 Sports Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>$70.00</p>
+    </div>
+    <div class="col-4">
+      <img src="@routes.Assets.versioned("images/product-4.jpg")" >
+      <h4>Black Printed T-shirt</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+      </div>
+      <p>$30.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="@routes.Assets.versioned("images/product-1.jpg")" >
+      <h4>Red Printed T-shirt</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>$50.00</p>
+    </div>
+    <div class="col-4">
+      <img src="@routes.Assets.versioned("images/product-2.jpg")" alt="">
+      <h4>HRX 4000 Sports Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>$70.00</p>
+    </div>
+    <div class="col-4">
+      <img src="@routes.Assets.versioned("images/product-8.jpg")" >
+      <h4>Black Fossil Watch</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+      </div>
+      <p>$30.00</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <img src="@routes.Assets.versioned("images/product-9.jpg")" >
+      <h4>Black Fossil Watch</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>$50.00</p>
+    </div>
+    <div class="col-4">
+      <img src="@routes.Assets.versioned("images/product-10.jpg")" alt="">
+      <h4>HRX 4000 Sports Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>$70.00</p>
+    </div>
+    <div class="col-4">
+      <img src="@routes.Assets.versioned("images/product-11.jpg")" >
+      <h4>HRX 5000 Sports Shoes</h4>
+      <div class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half"></i>
+      </div>
+      <p>$30.00</p>
+    </div>
+  </div>
+  <div class="page-btn">
+    <span>1</span>
+    <span>2</span>
+    <span>3</span>
+    <span>4</span>
+    <span>&#8594;</span>
+  </div>
+</div>
+
+<script>
+  var MenuItems = document.getElementById('MenuItems')
+
+  MenuItems.style.maxHeight = '0px'
+
+  function menutoggle() {
+    if (MenuItems.style.maxHeight == '0px') {
+      MenuItems.style.maxHeight = '200px'
+    } else {
+      MenuItems.style.maxHeight = '0px'
+    }
+  }
+</script>
+}
